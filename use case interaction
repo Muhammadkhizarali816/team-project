@@ -1,0 +1,10 @@
+# Population Data Management System - Use Cases
+
+| Use Case ID | Title                  | Actor        | Steps                                                                 | Outcome                                                                 | Technical Components           |
+|-------------|------------------------|--------------|-----------------------------------------------------------------------|-------------------------------------------------------------------------|--------------------------------|
+| **UC-01**   | Secure User Login      | User         | 1. Enter email/password<br>2. System verifies against MySQL<br>3. Grant dashboard access | User gains secure access to system                                    | C++ authentication, MySQL user table |
+| **UC-02**   | Region-Based Search    | User         | 1. Select region from dropdown<br>2. System runs MySQL query<br>3. Displays filtered results | User sees accurate population data for selected region               | C++ UI, MySQL WHERE clauses   |
+| **UC-03**   | Demographic Analysis   | Analyst      | 1. Request age/gender breakdown<br>2. System fetches data<br>3. Generates pie charts | Analyst can visualize population composition                        | MySQL JOINs, C++ chart library |
+| **UC-04**   | Growth Report Generation | Analyst    | 1. Select year range (2010-2020)<br>2. System calculates % change<br>3. Formats PDF report | Printable report showing population trends                          | C++ math ops, PDF libraries   |
+| **UC-05**   | Data Export to CSV     | User         | 1. Click "Export"<br>2. C++ converts MySQL data to CSV<br>3. Saves to Downloads folder | User gets spreadsheet-ready data file                               | File I/O in C++               |
+| **UC-06**   | Admin Data Update      | Administrator| 1. Edit record fields<br>2. System validates inputs<br>3. Updates MySQL safely | Database maintains accurate population records                      | MySQL UPDATE queries          |
